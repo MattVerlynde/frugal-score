@@ -1,1 +1,1 @@
-# frugal-score-icml
+# frugal-score
