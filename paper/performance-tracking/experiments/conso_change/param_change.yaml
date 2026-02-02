@@ -1,0 +1,22 @@
+fixed_args:
+    options: 
+        '--cores': 12
+        '--image': 'data/Scene_2small'
+    positional:
+        pos_0: -n
+        pos_1: '30'
+
+varying_args:
+    range:
+        options:
+            '--robust': [0, 3, 1]
+
+    groups:
+        - options:
+            '--window': 5
+            
+        - options:
+            '--window': 7
+            
+        - options:
+            '--window': 21

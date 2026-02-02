@@ -1,0 +1,27 @@
+fixed_args:
+    options:
+        '--num_epochs': 100
+        '--batch_size': 256
+        '--data_root': '/media/HDD/ImageNet/ImageNet/imagenet'
+        '--pretrained': False
+        '--device': 'cuda'
+        '--storage_path': './results'
+        '--num_workers': 12
+        '--prefetch_factor': 4
+        '--model': 'shufflenet_v2_x0_5'
+        
+
+varying_args:
+    range:
+        options:
+            '--seed': [0, 11, 1]
+
+    # groups:
+    #     - options:
+            
+        
+    #     - options:
+    #         '--model': 'mobilenet_v2'
+        
+    #     - options:
+    #         '--model': 'efficientnet_b0'

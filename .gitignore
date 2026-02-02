@@ -1,0 +1,6 @@
+paper/outputs/*
+*.pyc
+__pycache__/
+*.pkl
+dist/
+build/

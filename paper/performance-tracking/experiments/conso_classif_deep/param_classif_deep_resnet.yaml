@@ -1,0 +1,28 @@
+fixed_args:
+    options:
+        '--num_epochs': 200
+        '--batch_size': 256
+        '--data_root': './data/cifar'
+        # '--pretrained': True
+        '--device': 'cuda'
+        '--storage_path': './results'
+        '--num_workers': 12
+        '--prefetch_factor': 4
+        '--model': 'resnet18'
+        '--seed': 1
+        
+
+varying_args:
+    # range:
+    #     options:
+    #         '--seed': [0, 10, 1]
+
+    groups:
+        - options:
+            '--pretrained': True
+        
+        - options:
+            '--pretrained': False
+        
+    #     - options:
+    #         '--learning_rate': 0.01
