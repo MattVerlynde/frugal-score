@@ -1,8 +1,19 @@
 [build-system]
-requires = ["setuptools>=42", "wheel", "scikit-fuzzy", "codecarbon"]
+requires = ["setuptools>=42"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "frugalityscore"
+description = "Package for fuzzy-logic-based frugality score"
 version = "0.1"
-dependencies = ["requests", "scikit-fuzzy", "codecarbon"]
+readme = "README"
+license = {file="LICENSE"}
+requires-python = ">=3.8"
+dependencies = [
+    "scikit-fuzzy",
+    "matplotlib",
+    "codecarbon",
+]
+
+[tool.setuptools.dynamic]
+version = {attr="frugalityscore.__version__"}
